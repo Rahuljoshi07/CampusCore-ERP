@@ -1,0 +1,27 @@
+# Dependencies
+/vendor/
+
+# Environment files
+.env
+
+# Laravel
+/storage/*.key
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/bootstrap/cache/*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test
+.phpunit.result.cache
+phpunit.xml
