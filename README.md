@@ -1,75 +1,130 @@
-# 🎓 CampusCore ERP — Modern College Management System
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=nextdotjs" />
+  <img src="https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-Strict-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind-CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+</p>
 
-A full-stack, production-ready college ERP platform that streamlines administration, academics, and campus operations — built with **Next.js 14**, **Node.js/Express**, **Prisma**, and **SQLite**.
+<h1 align="center">🎓 CampusCore ERP</h1>
+<p align="center">
+  <strong>A Modern, Full-Stack College Management System</strong><br/>
+  Streamline administration, academics, and campus operations with a single platform.
+</p>
 
----
-
-## 📸 Screenshots
-
-| Login | Dashboard |
-|:-----:|:---------:|
-| ![Login](https://via.placeholder.com/580x360/f8fafc/1e293b?text=Login+Page) | ![Dashboard](https://via.placeholder.com/580x360/f8fafc/1e293b?text=Admin+Dashboard) |
-
----
-
-## ⚡ Features at a Glance
-
-| Module | Highlights |
-|--------|------------|
-| **👨‍🎓 Students** | Registration, admission, profiles, documents, academic records, personal dashboard |
-| **👨‍🏫 Faculty** | Profiles, subject/class assignment, HOD designation, leave management |
-| **📚 Academics** | Departments, courses, batches, sections, subjects, semester tracking |
-| **📅 Timetable** | Class scheduling, day-of-week slots, room allocation, faculty mapping |
-| **✅ Attendance** | Subject-wise daily marking by faculty, stats & reports, late/excused tracking |
-| **📝 Examinations** | Internal/midterm/final/practical exams, marks entry, grade calculation, result publishing |
-| **💰 Fees** | Fee structures per course/semester, payment tracking, receipt numbers, due reminders |
-| **📖 Library** | Book catalog with ISBN, issue/return records, fine management, availability tracking |
-| **🏠 Hostel** | Buildings, rooms (single/double/triple/dorm), student allocation, rent management |
-| **📢 Notices** | Role-targeted announcements, pinned/published state, expiry dates |
-| **🔔 Notifications** | Real-time per-user notifications with read/unread status |
-| **📊 Analytics** | Dashboard stats, activity logs, system-wide reporting |
+<p align="center">
+  <a href="#-features">Features</a> · 
+  <a href="#-tech-stack">Tech Stack</a> · 
+  <a href="#-getting-started">Getting Started</a> · 
+  <a href="#-api-reference">API Reference</a> · 
+  <a href="#-demo-credentials">Demo Credentials</a>
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%">
+
+**🎓 Student Management**
+- Registration, admission, profiles
+- Document uploads and academic records
+- Personal dashboard with grades and attendance
+
+**👨‍🏫 Faculty Management**
+- Faculty profiles with subject/class assignments
+- HOD designation and leave management
+- Attendance marking and exam management
+
+**📚 Academics**
+- Departments, courses, batches, sections
+- Subjects and semester tracking
+- Academic year management
+
+**📅 Timetable & Scheduling**
+- Class scheduling with day-of-week slots
+- Room allocation and faculty mapping
+
+</td>
+<td width="50%">
+
+**✅ Attendance System**
+- Subject-wise daily marking by faculty
+- Stats & reports with late/excused tracking
+
+**📝 Examinations**
+- Internal, midterm, final, and practical exams
+- Marks entry, grade calculation, result publishing
+
+**💰 Fee Management**
+- Fee structures per course/semester
+- Payment tracking, receipt numbers, due reminders
+
+**📖 Library & 🏠 Hostel**
+- Book catalog (ISBN), issue/return, fine management
+- Room allocation (single/double/triple/dorm), rent tracking
+
+**📢 Notices & 🔔 Notifications**
+- Role-targeted announcements with pin/publish/expiry
+- Real-time per-user notifications with read/unread status
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠 Tech Stack
+
+<table>
+<tr>
+<td valign="top" width="50%">
 
 ### Frontend
 | Technology | Purpose |
-|------------|---------|
-| [Next.js 14](https://nextjs.org/) | React framework with App Router |
-| [TypeScript](https://www.typescriptlang.org/) | Type-safe development |
-| [Tailwind CSS](https://tailwindcss.com/) | Utility-first styling |
-| [Redux Toolkit](https://redux-toolkit.js.org/) | Global state management |
-| [Recharts](https://recharts.org/) | Dashboard charts & analytics |
-| [Framer Motion](https://www.framer.com/motion/) | Smooth UI animations |
-| [Axios](https://axios-http.com/) | HTTP client with interceptors |
-| [react-hot-toast](https://react-hot-toast.com/) | Toast notifications |
+|:--|:--|
+| **Next.js 14** | React framework (App Router) |
+| **TypeScript** | Type-safe development |
+| **Tailwind CSS** | Utility-first styling |
+| **Redux Toolkit** | Global state management |
+| **Recharts** | Dashboard charts |
+| **Framer Motion** | Smooth animations |
+| **Axios** | HTTP client with interceptors |
+
+</td>
+<td valign="top" width="50%">
 
 ### Backend
 | Technology | Purpose |
-|------------|---------|
-| [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/) | REST API server |
-| [Prisma ORM](https://www.prisma.io/) | Type-safe database access |
-| [SQLite](https://www.sqlite.org/) | Lightweight embedded database |
-| [JWT](https://jwt.io/) | Access + refresh token authentication |
-| [bcryptjs](https://github.com/dcodeIO/bcrypt.js) | Password hashing |
-| [Winston](https://github.com/winstonjs/winston) | Structured logging |
-| [Helmet](https://helmetjs.github.io/) | Security headers |
-| [Nodemailer](https://nodemailer.com/) | Email service |
+|:--|:--|
+| **Node.js + Express** | REST API server |
+| **Prisma ORM** | Type-safe database queries |
+| **SQLite** | Lightweight embedded database |
+| **JWT** | Access + refresh token auth |
+| **bcryptjs** | Password hashing (12 rounds) |
+| **Winston** | Structured logging |
+| **Helmet** | Security headers |
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 📁 Project Structure
 
 ```
-CampusCore/
-├── frontend/                   # Next.js 14 application
+CampusCore-ERP/
+│
+├── frontend/                        # Next.js 14 App
 │   └── src/
 │       ├── app/
-│       │   ├── page.tsx             # Landing page
-│       │   ├── login/               # Authentication
-│       │   ├── register/
-│       │   └── dashboard/           # Protected dashboard
+│       │   ├── page.tsx                  # Landing page
+│       │   ├── login/ & register/        # Auth pages
+│       │   └── dashboard/                # Protected routes
 │       │       ├── students/
 │       │       ├── faculty/
 │       │       ├── academics/
@@ -77,28 +132,28 @@ CampusCore/
 │       │       ├── exams/
 │       │       ├── fees/
 │       │       ├── notices/
-│       │       ├── notifications/
 │       │       ├── timetable/
 │       │       ├── analytics/
 │       │       └── settings/
-│       ├── components/              # Reusable UI components
-│       ├── lib/                     # API client & utilities
-│       └── store/                   # Redux slices & hooks
+│       ├── components/                   # Reusable UI components
+│       ├── lib/                          # API client & utilities
+│       └── store/                        # Redux slices & hooks
 │
-├── backend/                    # Express.js API server
+├── backend/                         # Express.js API
 │   ├── prisma/
-│   │   ├── schema.prisma            # Database schema (30+ models)
-│   │   └── seed.ts                  # Demo data seeder
+│   │   ├── schema.prisma                 # 30+ database models
+│   │   └── seed.ts                       # Demo data seeder
 │   └── src/
-│       ├── index.ts                 # App entry point
-│       ├── controllers/             # Route handlers
-│       ├── routes/                  # API route definitions
-│       ├── services/                # Business logic
-│       ├── middleware/              # Auth, validation, logging
-│       ├── config/                  # App configuration
-│       └── utils/                   # Logger & helpers
+│       ├── index.ts                      # Entry point
+│       ├── controllers/                  # Route handlers
+│       ├── routes/                       # API route definitions
+│       ├── services/                     # Business logic
+│       ├── middleware/                   # Auth, validation, logging
+│       └── config/                       # App configuration
 │
-└── docker-compose.yml          # Container orchestration
+├── analytics-service/               # PHP Analytics Microservice
+├── docker-compose.yml                # Container orchestration
+└── README.md
 ```
 
 ---
@@ -107,17 +162,19 @@ CampusCore/
 
 ### Prerequisites
 
-- **Node.js** ≥ 18.x
-- **npm** ≥ 9.x
+| Requirement | Version |
+|:--|:--|
+| Node.js | >= 18.x |
+| npm | >= 9.x |
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd CampusCore
+git clone https://github.com/Rahuljoshi07/CampusCore-ERP.git
+cd CampusCore-ERP
 ```
 
-### 2. Backend setup
+### 2. Setup Backend
 
 ```bash
 cd backend
@@ -125,22 +182,22 @@ npm install
 
 # Create environment file
 cp .env.example .env
-# The default .env uses SQLite — no database server needed
+# Default config uses SQLite - no database server needed!
 
-# Generate Prisma client & create database
+# Generate Prisma client and create database
 npx prisma generate
 npx prisma db push
 
-# Seed with demo data
+# Seed demo data
 npm run db:seed
 
-# Start the server
+# Start dev server
 npm run dev
 ```
 
-The API will be available at **http://localhost:5000**.
+> **Backend runs at** `http://localhost:5000`
 
-### 3. Frontend setup
+### 3. Setup Frontend
 
 ```bash
 cd frontend
@@ -149,78 +206,83 @@ npm install
 # Create environment file
 cp .env.local.example .env.local
 
-# Start the dev server
+# Start dev server
 npm run dev
 ```
 
-The app will be available at **http://localhost:3000**.
+> **Frontend runs at** `http://localhost:3000`
 
 ---
 
 ## 🔐 Demo Credentials
 
 | Role | Email | Password |
-|------|-------|----------|
-| **Admin** | `admin@college.edu` | `Admin123!` |
-| **Faculty** | `faculty@college.edu` | `User123!` |
-| **Student** | `student@college.edu` | `Student123!` |
+|:--|:--|:--|
+| 🔴 Admin | `admin@college.edu` | `Admin123!` |
+| 🟡 Faculty | `faculty@college.edu` | `User123!` |
+| 🟢 Student | `student@college.edu` | `Student123!` |
 
 ---
 
 ## 🔌 API Reference
 
-All endpoints are prefixed with `/api`.
+All endpoints are prefixed with `/api`
 
-| Module | Base Path | Auth Required |
-|--------|-----------|:------------:|
-| Auth | `/api/auth` | ❌ (login/register) |
-| Users | `/api/users` | ✅ |
-| Students | `/api/students` | ✅ |
-| Faculty | `/api/faculty` | ✅ |
-| Attendance | `/api/attendance` | ✅ |
-| Exams | `/api/exams` | ✅ |
-| Fees | `/api/fees` | ✅ |
-| Academics | `/api/academic` | ✅ |
-| Notifications | `/api/notifications` | ✅ |
-| Analytics | `/api/analytics` | ✅ |
+<details>
+<summary><strong>📋 View All API Modules</strong></summary>
 
-### Key auth endpoints
+| Module | Endpoint | Auth |
+|:--|:--|:--:|
+| Auth | `/api/auth` | No |
+| Users | `/api/users` | Yes |
+| Students | `/api/students` | Yes |
+| Faculty | `/api/faculty` | Yes |
+| Attendance | `/api/attendance` | Yes |
+| Exams | `/api/exams` | Yes |
+| Fees | `/api/fees` | Yes |
+| Academics | `/api/academic` | Yes |
+| Notifications | `/api/notifications` | Yes |
+| Analytics | `/api/analytics` | Yes |
 
-```
-POST   /api/auth/register        # Create account
-POST   /api/auth/login            # Get access + refresh tokens
-POST   /api/auth/refresh-token    # Refresh expired access token
-POST   /api/auth/logout           # Invalidate refresh token
-GET    /api/auth/me               # Get current user profile
-POST   /api/auth/change-password  # Update password
+</details>
+
+### Authentication Endpoints
+
+```http
+POST   /api/auth/register          # Create a new account
+POST   /api/auth/login              # Get access + refresh tokens
+POST   /api/auth/refresh-token      # Refresh expired access token
+POST   /api/auth/logout             # Invalidate refresh token
+GET    /api/auth/me                 # Get current user profile
+POST   /api/auth/change-password    # Update password
 ```
 
 ---
 
-## 👥 Role-Based Access
+## 👥 Role-Based Access Control
 
 | Capability | Admin | Faculty | Student | Staff |
-|------------|:-----:|:-------:|:-------:|:-----:|
-| System settings | ✅ | — | — | — |
-| Manage users | ✅ | — | — | — |
-| Manage departments/courses | ✅ | — | — | — |
-| Mark attendance | ✅ | ✅ | — | — |
-| Create exams & enter marks | ✅ | ✅ | — | — |
+|:--|:--:|:--:|:--:|:--:|
+| System settings | ✅ | - | - | - |
+| Manage users | ✅ | - | - | - |
+| Manage departments & courses | ✅ | - | - | - |
+| Mark attendance | ✅ | ✅ | - | - |
+| Create exams & enter marks | ✅ | ✅ | - | - |
 | View own dashboard | ✅ | ✅ | ✅ | ✅ |
-| View attendance & results | ✅ | ✅ | ✅ | — |
-| Fee payments | ✅ | — | ✅ | ✅ |
-| Library & hostel ops | ✅ | — | — | ✅ |
+| View attendance & results | ✅ | ✅ | ✅ | - |
+| Fee payments | ✅ | - | ✅ | ✅ |
+| Library & hostel operations | ✅ | - | - | ✅ |
 
 ---
 
-## 🗄️ Database Schema
+## 🗄 Database Schema
 
-The Prisma schema contains **30+ models** covering the full college domain:
+The Prisma schema includes **30+ models** covering the full college domain:
 
 ```
 User ─┬─ Student ── Attendance, ExamResult, FeePayment, LibraryRecord,
       │              HostelAllocation, LeaveApplication, Document
-      ├─ Faculty ── FacultySubject, ClassSchedule, Exam, Attendance (marker)
+      ├─ Faculty ── FacultySubject, ClassSchedule, Exam, Attendance
       ├─ Staff
       └─ Admin
 
@@ -233,43 +295,70 @@ FeeStructure, Book, HostelBuilding ── HostelRoom
 
 ---
 
-## 📜 Available Scripts
+## 📜 Scripts
+
+<table>
+<tr>
+<td width="50%">
 
 ### Backend (`cd backend`)
 
 | Command | Description |
-|---------|-------------|
-| `npm run dev` | Start dev server with hot reload |
-| `npm run build` | Compile TypeScript to `dist/` |
+|:--|:--|
+| `npm run dev` | Start with hot reload |
+| `npm run build` | Compile TypeScript |
 | `npm start` | Run production build |
 | `npm run db:generate` | Generate Prisma client |
-| `npm run db:push` | Push schema to database |
+| `npm run db:push` | Push schema to DB |
 | `npm run db:seed` | Seed demo data |
-| `npm run db:migrate` | Run Prisma migrations |
-| `npm test` | Run tests |
+| `npm run db:migrate` | Run migrations |
+
+</td>
+<td width="50%">
 
 ### Frontend (`cd frontend`)
 
 | Command | Description |
-|---------|-------------|
+|:--|:--|
 | `npm run dev` | Start Next.js dev server |
 | `npm run build` | Production build |
 | `npm start` | Serve production build |
 | `npm run lint` | Run ESLint |
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔒 Security
 
 - **Helmet.js** for HTTP security headers
-- **Rate limiting** — 100 requests per 15 minutes per IP
+- **Rate limiting** at 100 requests / 15 min per IP
 - **CORS** restricted to configured frontend origin
-- **bcrypt** password hashing (12 salt rounds)
+- **bcrypt** password hashing with 12 salt rounds
 - **JWT** access tokens (15 min) + refresh tokens (7 days)
 - **Input validation** via express-validator middleware
 
 ---
 
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
 ## 📄 License
 
-MIT License — free for educational and commercial use.
+This project is licensed under the **MIT License**. Free for educational and commercial use.
+
+---
+
+<p align="center">
+  Built with ❤️ for modern campus management<br/>
+  <strong>CampusCore ERP</strong>
+</p>
