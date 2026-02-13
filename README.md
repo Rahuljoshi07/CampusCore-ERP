@@ -356,7 +356,7 @@ FeeStructure, Book, HostelBuilding ── HostelRoom
 
 ## 📄 License
 
-This project is licensed under the **MIT License**. Free for educational and commercial use.
+Free for educational and commercial use.
 
 ---
 
